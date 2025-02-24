@@ -1,17 +1,29 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
-// Vars
-    // Colors
-    $bg-color: white; 
-    $bg-alt1-color: #5266df;
-    $bg-alt2-color: #242946;
-    $header-color: $bg-alt2-color;
-    $txt-color: #c0c1c5;
-    $txt-color-highlight: #d7a0a2;
-    $btn-color-1: #5265E1;
-    $btn-color-2: #FA5959;
+.btn-primary {
+    background-color: $primary;
+}
 
+.btn-danger {
+    background-color: $secondary;
+}
 
-body {
-    background-color: $bg-alt1-color;
+.navbar-toggler-icon[aria-expanded="true"] {
+    background-image: url(img/icon-close.svg) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url(img/icon-hamburger.svg);
+}
+
+.navbar {
+    --bs-navbar-toggler-border-color: transparent;
+}
+
+.nav-item {
+    padding-left: $spacer *1.5;
+    padding-right: $spacer *1.5;
 }
