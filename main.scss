@@ -1,0 +1,17 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// Vars
+    // Colors
+    $bg-color: white; 
+    $bg-alt1-color: #5266df;
+    $bg-alt2-color: #242946;
+    $header-color: $bg-alt2-color;
+    $txt-color: #c0c1c5;
+    $txt-color-highlight: #d7a0a2;
+    $btn-color-1: #5265E1;
+    $btn-color-2: #FA5959;
+
+
+body {
+    background-color: $bg-alt1-color;
+}
