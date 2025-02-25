@@ -1,9 +1,26 @@
 $primary: #5265E1;
 $secondary: #FA5959;
+$black-50: rgba(0, 0, 0, 0.5);
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
+.nav-tabs {
+    .nav-item {
+        .nav-link {
+            border: none;
+            box-shadow: none;
+            color: $black-50;
 
+            &.active {
+                color: black;
+                border-bottom: 3px solid $secondary;
+            }
+            &:not(.active) {
+                border-bottom: none !important;
+            }
+        }
+    }
+}
 
 .body {
     max-width: 1200;
@@ -29,6 +46,7 @@ $secondary: #FA5959;
     padding-left: $spacer *1.5;
     padding-right: $spacer *1.5;
 }
+
 
 .fw-medium {
     color: #242946;

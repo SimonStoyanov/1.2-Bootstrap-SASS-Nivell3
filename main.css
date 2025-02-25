@@ -11965,6 +11965,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.nav-tabs .nav-item .nav-link {
+  border: none;
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.nav-tabs .nav-item .nav-link.active {
+  color: black;
+  border-bottom: 3px solid #FA5959;
+}
+.nav-tabs .nav-item .nav-link:not(.active) {
+  border-bottom: none !important;
+}
+
 .body {
   max-width: 1200;
 }
