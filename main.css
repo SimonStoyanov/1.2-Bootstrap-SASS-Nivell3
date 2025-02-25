@@ -11965,8 +11965,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.btn-primary {
-  background-color: #5265E1;
+.body {
+  max-width: 1200;
 }
 
 .btn-danger {
@@ -11994,13 +11994,9 @@ textarea.form-control-lg {
   color: #242946;
 }
 
-#hero {
-  position: relative;
-}
-
-#hero::before {
+.hero {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 15%;
   content: "";
   width: 85%;
@@ -12008,29 +12004,4 @@ textarea.form-control-lg {
   background-color: #5265E1;
   z-index: -1;
   border-radius: 0 0 0 15rem;
-}
-
-@media (min-width: 1140px) {
-  .ms-custom {
-    margin-left: 8rem !important;
-  }
-}
-@media (min-width: 960px) {
-  .ms-custom {
-    margin-left: 6rem !important;
-  }
-}
-@media (min-width: 720px) {
-  .ms-custom {
-    margin-left: 4rem !important;
-  }
-}
-@media (max-width: 540px) {
-  .ms-custom {
-    margin-left: 0rem !important;
-  }
-}
-
-.ms-20 {
-  margin-left: 20rem;
 }/*# sourceMappingURL=main.css.map */
