@@ -12007,7 +12007,7 @@ textarea.form-control-lg {
   color: #242946;
 }
 
-.hero {
+.blue-pill-right {
   position: absolute;
   top: 25%;
   left: 15%;
@@ -12017,4 +12017,16 @@ textarea.form-control-lg {
   background-color: #5265E1;
   z-index: -1;
   border-radius: 0 0 0 15rem;
+}
+
+.blue-pill-left {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  content: "";
+  width: 85%;
+  height: 80%;
+  background-color: #5265E1;
+  z-index: -1;
+  border-radius: 0 0 15rem 0;
 }/*# sourceMappingURL=main.css.map */
