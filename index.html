@@ -8,32 +8,62 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg sticky-top bg-white">
-    <div class="container justify-space-between">
-      <a class="navbar-brand col-md-5" href="#"><img src="img/logo-bookmark.svg" alt="logo"></a>
-      <button class="navbar-toggler justify-content-center" type="button">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end mx-5">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#">FEATURES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">PRICING</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-danger px-5" href="#">LOGIN</a>
-          </li>
-        </ul>
+  <header class="container-fluid sticky-top bg-white p-3">
+    <nav class="navbar navbar-expand-lg">
+        <form class="container justify-content-between">
+            <img src="./img/logo-bookmark.svg" class="image" alt="logo-bookmark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarDropdownContent" aria-controls="navbarDropdownContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarDropdownContent">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item me-4">
+                        <a class="nav-link" aria-current="page" href="#">FEATURES</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">PRICING</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item me-4">
+                      <a class="btn btn-danger px-5" type="submit">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </nav>
+  </header>
+  <!-- PART 1 -->
+  <section class="container-fluid mx-auto">
+    <div class="row align-items-center mt-5 flex-column-reverse flex-md-row">
+      <!-- LEFT COLUMN -->
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-4 text-md-start text-center">
+        <h1 class="fw-medium display-5 mt-4 ms-custom">A Simple Bookmark Manager</h1>
+        <p class="text-black-50 mt-3 ms-custom">
+          A clean and simple interface to organize your favourite websites. 
+          Open a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="col-md-6 ms-custom d-flex justify-content-md-start justify-content-center">
+          <a href="#" class="btn btn-primary shadow px-3 text-nowrap">Get it on Chrome</a>
+          <a href="#" class="btn btn-light shadow mx-4 px-3 text-nowrap">Get it on Firefox</a>
+        </div>
+      </div>
+      <!-- RIGHT COLUMN -->
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 justify-content-center" id="hero">
+        <img class="img-fluid" src="img/illustration-hero.svg">
       </div>
     </div>
-  </nav>
-  <!-- PART 1 -->
-
+  </section>
+  <!-- PART 2 -->
+  <section class="container-fluid mx-auto mt-5">
+    <div class="mt-4 text-center justify-content-center">
+      <h2 class="col-12 fw-medium display-6 mt-4">Features</h2>
+      <h4 class="text-black-50 mt-3">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</h4>
+    </div>
+  </section>
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

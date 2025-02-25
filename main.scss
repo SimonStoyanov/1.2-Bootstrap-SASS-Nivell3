@@ -27,3 +27,42 @@ $secondary: #FA5959;
     padding-left: $spacer *1.5;
     padding-right: $spacer *1.5;
 }
+
+.fw-medium {
+    color: #242946;
+}
+
+#hero {
+    position: relative;
+}
+
+#hero::before {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    content: '';
+    width: 85%;
+    height : 80%;
+    background-color: $primary;
+    z-index: -1;
+    border-radius: 0 0 0 15rem;
+}
+
+.ms-custom {
+    @media (min-width: 1140px) {        
+        margin-left: ($spacer * 8) !important;
+    }
+    @media (min-width: 960px) {        
+        margin-left: ($spacer * 6) !important;
+    }
+    @media (min-width: 720px) {        
+        margin-left: ($spacer * 4) !important;
+    }
+    @media (max-width: 540px) {        
+        margin-left: ($spacer * 0) !important;
+    }
+}
+
+.ms-20{
+    margin-left: $spacer * 20;
+}
