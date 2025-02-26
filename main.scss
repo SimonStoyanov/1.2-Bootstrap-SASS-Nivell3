@@ -1,6 +1,7 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 $black-50: rgba(0, 0, 0, 0.5);
+$black-20: rgba(0, 0, 0, 0.2);
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -31,6 +32,40 @@ $black-50: rgba(0, 0, 0, 0.5);
 
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.accordion-item {   
+
+
+    .accordion-header {    
+        .accordion-button {
+            border-top: 1px solid $black-20;  
+            border-bottom: 1px solid $black-20;
+        
+            box-shadow: none;
+            background-color: transparent;
+
+            &:not(.collapsed){
+                color: $secondary;
+            }
+
+            &::after {
+                background: url(img/icon-arrow.svg) no-repeat center center;
+                transition: transform 0.3s ease-in-out;
+            }
+            &::after {
+                transform: rotate(0deg);
+            }
+            &:not(.collapsed)::after {
+                transform: rotate(180deg);
+                filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(927%) hue-rotate(-6deg) brightness(98%) contrast(97%); // Ensures FA5959 color
+            }
+        
+        }
+
+
+    }
+    
 }
 
 .body {

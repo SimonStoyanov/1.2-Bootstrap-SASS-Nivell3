@@ -11987,6 +11987,27 @@ textarea.form-control-lg {
   border-radius: 25px;
 }
 
+.accordion-item .accordion-header .accordion-button {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+  background-color: transparent;
+}
+.accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: #FA5959;
+}
+.accordion-item .accordion-header .accordion-button::after {
+  background: url(img/icon-arrow.svg) no-repeat center center;
+  transition: transform 0.3s ease-in-out;
+}
+.accordion-item .accordion-header .accordion-button::after {
+  transform: rotate(0deg);
+}
+.accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+  filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(927%) hue-rotate(-6deg) brightness(98%) contrast(97%);
+}
+
 .body {
   max-width: 1200px;
   margin: 0 auto;
