@@ -55,7 +55,7 @@ $black-50: rgba(0, 0, 0, 0.5);
 
 .blue-pill-right {
     position: absolute;
-    top: 25%;
+    top: 100px;
     right:0;
     max-width: 80vw !important;
     content: '';
@@ -67,17 +67,13 @@ $black-50: rgba(0, 0, 0, 0.5);
 
 .blue-pill-left {
     position: absolute;
-    top: 35%;
-    left:-5vw !important;
-    width: min(50vw, 600px);
+    top: 120px;
+    left: -8vw !important;
+    max-width: 80vw !important;
+    max-height: 325px;
     content: '';
     height : 80%;
     background-color: $primary;
     z-index: -1;
-    border-radius: 0 0 15rem 0;
-
-    @media (max-width: 768px) {
-        width: 80vw;
-        left: -10vw;     
-    }
+    border-radius: 0 25rem 15rem 0;
 }
