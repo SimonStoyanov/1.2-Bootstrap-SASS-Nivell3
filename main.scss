@@ -23,7 +23,8 @@ $black-50: rgba(0, 0, 0, 0.5);
 }
 
 .body {
-    max-width: 1200;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .btn-danger {
@@ -55,9 +56,9 @@ $black-50: rgba(0, 0, 0, 0.5);
 .blue-pill-right {
     position: absolute;
     top: 25%;
-    left: 15%;
+    right:0;
+    max-width: 80vw !important;
     content: '';
-    width: 85%;
     height : 80%;
     background-color: $primary;
     z-index: -1;
@@ -66,12 +67,17 @@ $black-50: rgba(0, 0, 0, 0.5);
 
 .blue-pill-left {
     position: absolute;
-    top: 25%;
-    right: 15%;
+    top: 35%;
+    left:-5vw !important;
+    width: min(50vw, 600px);
     content: '';
-    width: 85%;
     height : 80%;
     background-color: $primary;
     z-index: -1;
     border-radius: 0 0 15rem 0;
+
+    @media (max-width: 768px) {
+        width: 80vw;
+        left: -10vw;     
+    }
 }

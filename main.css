@@ -11979,7 +11979,8 @@ textarea.form-control-lg {
 }
 
 .body {
-  max-width: 1200;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .btn-danger {
@@ -12010,9 +12011,9 @@ textarea.form-control-lg {
 .blue-pill-right {
   position: absolute;
   top: 25%;
-  left: 15%;
+  right: 0;
+  max-width: 80vw !important;
   content: "";
-  width: 85%;
   height: 80%;
   background-color: #5265E1;
   z-index: -1;
@@ -12021,12 +12022,18 @@ textarea.form-control-lg {
 
 .blue-pill-left {
   position: absolute;
-  top: 25%;
-  right: 15%;
+  top: 35%;
+  left: -5vw !important;
+  width: min(50vw, 600px);
   content: "";
-  width: 85%;
   height: 80%;
   background-color: #5265E1;
   z-index: -1;
   border-radius: 0 0 15rem 0;
+}
+@media (max-width: 768px) {
+  .blue-pill-left {
+    width: 80vw;
+    left: -10vw;
+  }
 }/*# sourceMappingURL=main.css.map */
