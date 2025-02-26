@@ -11978,6 +11978,15 @@ textarea.form-control-lg {
   border-bottom: none !important;
 }
 
+.card {
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.card .card-body {
+  border-radius: 25px;
+}
+
 .body {
   max-width: 1200px;
   margin: 0 auto;
