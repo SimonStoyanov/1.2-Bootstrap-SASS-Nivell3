@@ -23,6 +23,10 @@ $black-20: rgba(0, 0, 0, 0.2);
     }
 }
 
+.nav-link:hover {
+    color: $secondary !important;
+}
+
 .card {
     border: none;
 
@@ -37,15 +41,13 @@ $black-20: rgba(0, 0, 0, 0.2);
 .accordion-item {   
     .accordion-header {    
         .accordion-button {
+            font-size: 1.15rem;
             border-top: 1px solid $black-20;  
             border-bottom: 1px solid $black-20;
         
             box-shadow: none;
             background-color: transparent;
 
-            &:not(.collapsed){
-                color: $secondary;
-            }
             &::after {
                 background: url(img/icon-arrow.svg) no-repeat center center;
                 transition: transform 0.3s ease-in-out;
@@ -57,6 +59,9 @@ $black-20: rgba(0, 0, 0, 0.2);
                 transform: rotate(180deg);
                 filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(927%) hue-rotate(-6deg) brightness(98%) contrast(97%); // Ensures FA5959 color
             }
+            &:hover {
+                color: $secondary !important;
+            }
         }
     } 
 }
@@ -66,8 +71,27 @@ $black-20: rgba(0, 0, 0, 0.2);
     margin: 0 auto;
 }
 
+.btn-primary, .btn-light {
+
+    &:hover {
+        background-color: white;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
 .btn-danger {
     background-color: $secondary;
+
+    &:hover {
+        background-color: white;
+        color: $secondary;
+        border: 1px solid $secondary;
+    }
+}
+
+.social-logo:hover {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(927%) hue-rotate(-6deg) brightness(98%) contrast(97%); // Ensures FA5959 color
 }
 
 .navbar-toggler-icon[aria-expanded="true"] {

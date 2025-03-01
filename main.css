@@ -11978,6 +11978,10 @@ textarea.form-control-lg {
   border-bottom: none !important;
 }
 
+.nav-link:hover {
+  color: #FA5959 !important;
+}
+
 .card {
   border: none;
   padding-left: 2rem;
@@ -11988,13 +11992,11 @@ textarea.form-control-lg {
 }
 
 .accordion-item .accordion-header .accordion-button {
+  font-size: 1.15rem;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: none;
   background-color: transparent;
-}
-.accordion-item .accordion-header .accordion-button:not(.collapsed) {
-  color: #FA5959;
 }
 .accordion-item .accordion-header .accordion-button::after {
   background: url(img/icon-arrow.svg) no-repeat center center;
@@ -12007,14 +12009,32 @@ textarea.form-control-lg {
   transform: rotate(180deg);
   filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(927%) hue-rotate(-6deg) brightness(98%) contrast(97%);
 }
+.accordion-item .accordion-header .accordion-button:hover {
+  color: #FA5959 !important;
+}
 
 .body {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+.btn-primary:hover, .btn-light:hover {
+  background-color: white;
+  color: #5265E1;
+  border: 1px solid #5265E1;
+}
+
 .btn-danger {
   background-color: #FA5959;
+}
+.btn-danger:hover {
+  background-color: white;
+  color: #FA5959;
+  border: 1px solid #FA5959;
+}
+
+.social-logo:hover {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(927%) hue-rotate(-6deg) brightness(98%) contrast(97%);
 }
 
 .navbar-toggler-icon[aria-expanded=true] {
