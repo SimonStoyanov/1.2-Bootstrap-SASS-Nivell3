@@ -12038,6 +12038,11 @@ textarea.form-control-lg {
   color: #242946;
 }
 
+.fw-lighter {
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+}
+
 .blue-pill-right {
   position: absolute;
   top: 100px;

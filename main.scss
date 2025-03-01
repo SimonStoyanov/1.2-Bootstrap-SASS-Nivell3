@@ -35,8 +35,6 @@ $black-20: rgba(0, 0, 0, 0.2);
 }
 
 .accordion-item {   
-
-
     .accordion-header {    
         .accordion-button {
             border-top: 1px solid $black-20;  
@@ -48,7 +46,6 @@ $black-20: rgba(0, 0, 0, 0.2);
             &:not(.collapsed){
                 color: $secondary;
             }
-
             &::after {
                 background: url(img/icon-arrow.svg) no-repeat center center;
                 transition: transform 0.3s ease-in-out;
@@ -60,12 +57,8 @@ $black-20: rgba(0, 0, 0, 0.2);
                 transform: rotate(180deg);
                 filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(927%) hue-rotate(-6deg) brightness(98%) contrast(97%); // Ensures FA5959 color
             }
-        
         }
-
-
-    }
-    
+    } 
 }
 
 .body {
@@ -97,6 +90,10 @@ $black-20: rgba(0, 0, 0, 0.2);
 
 .fw-medium {
     color: #242946;
+}
+.fw-lighter {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
 }
 
 .blue-pill-right {
