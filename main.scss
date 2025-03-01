@@ -115,6 +115,39 @@ $black-20: rgba(0, 0, 0, 0.2);
     background-color: #242946 !important;
 }
 
+.form-group {
+    position: relative;
+    display: inline-block;  
+    border-radius: 0.5rem 0.5rem 0 0;
+
+    &.invalid {
+        background-color: $secondary;
+    }
+
+    .invalid-feedback {
+        color: white; /* Red color for error message */
+        background-color: #FA5959;
+        font-size: 0.875rem; /* Smaller font size for the error message */
+        text-align: center;
+        left: 0;
+        bottom: -1rem;
+        display: none;
+        width: 100%;
+        padding-bottom: 0.15rem;
+    }
+}
+
+.form-control.is-invalid {
+    border-color: #FA5959;
+}
+
+.input-icon {
+    width: 20px; /* Size of the icon */
+    height: auto;
+    pointer-events: none; /* Disable clicking on the icon */
+}
+
+
 .fw-medium {
     color: #242946;
 }

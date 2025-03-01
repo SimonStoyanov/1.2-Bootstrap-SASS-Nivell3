@@ -272,11 +272,17 @@
           <p class="fw-lighter">35,000+ ALREADY JOINED</p>
           <h3 class="m-4">Stay up-to-date with what we're doing</h3>
         </div>
-        <form action="#" class="contact-form col-12 d-flex flex-md-row flex-column justify-content-center">
-          <input type="email" name="email" class="form-control w-auto m-2" placeholder="Enter your email address" required>
-          <button type="submit" class="btn btn-danger m-2">Contact Us</button>
+        <form action="#" class="contact-form col-12 d-flex flex-column flex-md-row justify-content-center align-items-center" novalidate>
+          <div class="form-group position-relative d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <input id="form" type="email" name="email" class="form-control w-auto mb-2" placeholder="Enter your email address" required>
+            <div class="invalid-feedback position-absolute">Whoops, make sure it's an email</div>
+            <div class="separator"></div>
+            <img src="img/icon-error.svg" class="input-icon position-absolute end-0 top-50" style="display:none;">
+          </div>
+          <button type="submit" class="btn btn-danger px-4 mx-2 mb-2">Contact Us</button>
         </form>
       </div>
+      
     </section>
     <section class="footer-navbar-section navbar-light p-4 m-0">
       <nav class="navbar container navbar-expand-lg align-items-center justify-content-center">
@@ -302,6 +308,25 @@
     </section>
   </footer>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.contact-form')
+
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+            form.querySelectorAll('.form-group').forEach(group => {
+                group.classList.add('invalid');
+            });
+          }
+          form.classList.add('was-validated');
+        }, false)
+      })
+    })()
+  </script>
 </body>
 
 </html>
