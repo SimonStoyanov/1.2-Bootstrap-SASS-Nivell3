@@ -12034,6 +12034,10 @@ textarea.form-control-lg {
   padding-right: 1.5rem;
 }
 
+.footer-navbar-section {
+  background-color: #242946 !important;
+}
+
 .fw-medium {
   color: #242946;
 }
