@@ -135,7 +135,20 @@ $black-20: rgba(0, 0, 0, 0.2);
         width: 100%;
         padding-bottom: 0.15rem;
     }
+
 }
+
+
+.input-icon {
+    display: none;
+    bottom: 17px;
+    right: 10px;
+
+    &.invalid {
+        display: inline-block;  
+    }
+}
+
 
 .form-control.is-invalid {
     border-color: #FA5959;

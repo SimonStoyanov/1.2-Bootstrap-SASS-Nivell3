@@ -12078,6 +12078,15 @@ textarea.form-control-lg {
   padding-bottom: 0.15rem;
 }
 
+.input-icon {
+  display: none;
+  bottom: 17px;
+  right: 10px;
+}
+.input-icon.invalid {
+  display: inline-block;
+}
+
 .form-control.is-invalid {
   border-color: #FA5959;
 }

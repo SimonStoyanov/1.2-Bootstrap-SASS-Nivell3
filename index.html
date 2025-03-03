@@ -277,7 +277,7 @@
             <input id="form" type="email" name="email" class="form-control w-auto mb-2" placeholder="Enter your email address" required>
             <div class="invalid-feedback position-absolute">Whoops, make sure it's an email</div>
             <div class="separator"></div>
-            <img src="img/icon-error.svg" class="input-icon position-absolute end-0 top-50" style="display:none;">
+            <img src="img/icon-error.svg" class="input-icon position-absolute">
           </div>
           <button type="submit" class="btn btn-danger px-4 mx-2 mb-2">Contact Us</button>
         </form>
@@ -320,6 +320,7 @@
             event.stopPropagation();
             form.querySelectorAll('.form-group').forEach(group => {
                 group.classList.add('invalid');
+                group.querySelector('.input-icon').classList.add('invalid');
             });
           }
           form.classList.add('was-validated');
